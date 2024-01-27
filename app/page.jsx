@@ -1,8 +1,11 @@
 // import { Main } from "next/document";
 import Image from "next/image";
+import Feature from "./components/Feature"
 
 export default function Home() {
   return (
-   <div>hello next </div>
+   <div className="container">
+    <Feature/>
+   </div>
   );
 }
