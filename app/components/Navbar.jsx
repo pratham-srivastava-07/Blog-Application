@@ -6,13 +6,13 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-  <div className='nav flex justify-center space-x-4 items-center mt-0 h-16 bg-slate-500 text-white'>
-    <div className='social flex flex-1 p-5 lg:ml-28 lg:flex md:m-auto gap-4 sm:hidden xsm:hidden lg:w-1/2'>
+  <div className='nav flex justify-center space-x-4 items-center mt-4 h-16  text-white '>
+    <div className='social flex-1 p-5 lg:ml-28 lg:flex md:m-auto gap-4 sm:hidden xsm:hidden lg:w-1/2'>
       <Image src="/facebook.png" alt='facebook' width={24} height={24}/>
       <Image src="/instagram.png" alt='facebook' width={24} height={24}/>
       <Image src="/youtube.png" alt='facebook' width={24} height={24}/>
     </div>
-    <div className='logo flex flex-1 lg:pl-36 sm:pl-auto md:pl-auto font-bold text-2xl md:flex-col md:text-left sm:flex-col sm:text-left sm:m-auto lg:flex-row'>EpicBlogsss</div>
+    <div className='logo flex-1 lg:pl-36 sm:pl-auto md:pl-auto font-bold text-2xl md:flex-col md:text-left sm:flex-col sm:text-left sm:m-auto lg:flex-row'>EpicBlogsss</div>
     <div className="links flex-1 space-x-5 md:hidden sm:hidden xsm:hidden lg:block ">
       <Link href="/" className='hover:text-black'>Home</Link>
       <Link href="/about" className='hover:text-black'>About</Link>
