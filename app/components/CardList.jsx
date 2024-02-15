@@ -4,7 +4,7 @@ import Card from "./Card"
 export default function CardList() {
   const img = '/p1.jpeg'
   return (
-    <div className='container text-white'>
+    <div className='container w-1/2 text-white'>
     <div className="title my-8">Recent Posts</div>
     <div className="posts">
         <div className="post space-y-6">
