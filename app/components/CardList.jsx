@@ -9,7 +9,7 @@ export default function CardList() {
     <div className="posts">
         <div className="post space-y-6">
         <Card img={img} category ="CULTURE" link = "CULTURE"/>
-        <Card img ={img} category="FASION" link="FASION"/>
+        <Card img ={img} category="FASHION" link="FASHION"/>
         </div>
     </div>
     </div>
