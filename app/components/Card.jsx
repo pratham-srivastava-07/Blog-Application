@@ -7,7 +7,7 @@ export default function Card(props) {
     <div>
       <div className="container flex space-x-10">
         <div className="imageContainer">
-            <Image src={props.img} alt="img" width={800} height={800}/>
+            <Image src={props.img} alt="img" width={1700} height={1700}/>
         </div>
         <div className="textContainer">
            <div className="details flex space-x-3">
