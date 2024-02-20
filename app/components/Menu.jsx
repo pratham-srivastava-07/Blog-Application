@@ -3,6 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Menu() {
+  const styles = {
+    borderRadius: "50%",
+    width: 100,
+    height: 100,
+    maxWidth: "unset",
+  }
   return (
     <div className='container text-white flex-1 mt-9'>
       <h2 className="text-red-400 text-base font-normal">{"What's hot?"}</h2>
@@ -10,8 +16,8 @@ export default function Menu() {
     
       <div className="items text-xl">
         <Link href={`/blog?popular=coding`} className='item flex items-center gap-5 mt-5'>
-          <div className="imgContainer  relative">
-              <Image src="/coding.png" alt='' className='rounded-full' width={200} height={200}/>
+          <div className="imgContainer" >
+              <Image src="/coding.png" alt='' className='' width={100} height={100} style={styles} />
           </div>
           <div className="textContainer  ">
           <span className="text-white bg-red-600 w-auto rounded-xl p-1 text-sm ">Coding</span>
@@ -25,8 +31,8 @@ export default function Menu() {
           </div>
         </Link>
         <Link href={`/blog?popular=travel`} className='item flex items-center gap-5 mt-5'>
-          <div className="imgContainer  relative">
-              <Image src="/travel.png" alt='' className='rounded-full' width={200} height={50}/>
+          <div className="imgContainer ">
+              <Image src="/travel.png" alt='' className='' width={100} height={100} style={styles}/>
           </div>
           <div className="textContainer  ">
           <span className="text-white bg-red-600 w-auto rounded-xl p-1 text-sm ">Travel</span>

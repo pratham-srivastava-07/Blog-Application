@@ -8,8 +8,8 @@ export function GET() {
 }
 export function POST(req) {
     return NextResponse.json({
-        name: "Movie",
-        desc: "Love"
+            name: "Movie",
+            desc: "Love"
     })
 }
 
