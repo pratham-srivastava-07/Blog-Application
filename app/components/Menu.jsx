@@ -45,6 +45,36 @@ export default function Menu() {
            </div>
           </div>
         </Link>
+        <Link href={`/blog?popular=fashion`} className='item flex items-center gap-5 mt-5'>
+          <div className="imgContainer ">
+              <Image src="/fashion.png" alt='' className='' width={100} height={100} style={styles}/>
+          </div>
+          <div className="textContainer  ">
+          <span className="text-white bg-red-600 w-auto rounded-xl p-1 text-sm ">Fashion</span>
+            <h3 className="text-white text-md ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima?
+            </h3>
+           <div className="details flex text-xs space-x-3 mt-2">
+           <div className="name text-white">John Doe</div>
+            <div className="date">{new Date().toLocaleDateString('en-US')}</div>
+           </div>
+          </div>
+        </Link>
+        <Link href={`/blog?popular=culture`} className='item flex items-center gap-5 mt-5'>
+          <div className="imgContainer ">
+              <Image src="/culture.png" alt='' className='' width={100} height={100} style={styles}/>
+          </div>
+          <div className="textContainer  ">
+          <span className="text-white bg-red-600 w-auto rounded-xl p-1 text-sm ">Culture</span>
+            <h3 className="text-white text-md ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima?
+            </h3>
+           <div className="details flex text-xs space-x-3 mt-2">
+           <div className="name text-white">John Doe</div>
+            <div className="date">{new Date().toLocaleDateString('en-US')}</div>
+           </div>
+          </div>
+        </Link>
       </div>
     </div>
   )
