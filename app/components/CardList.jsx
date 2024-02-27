@@ -11,6 +11,10 @@ export default function CardList() {
         <Card img={img} category ="CULTURE" link = "CULTURE"/>
         <Card img ={img} category="FASHION" link="FASHION"/>
         <Card img ={img} category="CODING" link="CODING"/>
+        <Card img ={img} category="TRAVEL" link="TRAVEL"/>
+        <Card img ={img} category="FOOD" link="FOOD"/>
+        <Card img ={img} category="STYLE" link="STYLE"/>
+
         </div>
     </div>
     </div>
