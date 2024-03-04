@@ -1,9 +1,9 @@
 // import { Main } from "next/document";
 import Image from "next/image";
-import Feature from "./components/Feature"
-import Catagory from "./components/Catagory";
-import CardList from "./components/CardList"
-import Menu from "./components/Menu"
+import Feature from "../components/Feature"
+import Catagory from "../components/Catagory";
+import CardList from "../components/CardList"
+import Menu from "../components/Menu"
 
 export default function Home() {
   return (
