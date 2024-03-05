@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import MenuPosts from './MenuPosts'
 
 export default function Menu() {
   const styles = {
@@ -76,6 +77,7 @@ export default function Menu() {
           </div>
         </Link>
       </div>
+      <MenuPosts/>
     </div>
   )
 }
