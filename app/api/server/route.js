@@ -6,7 +6,7 @@ export function GET() {
         id:  7
     })
 }
-export function POST(req) {
+export async function POST(req) {
     return NextResponse.json({
             name: "Movie",
             desc: "Love"

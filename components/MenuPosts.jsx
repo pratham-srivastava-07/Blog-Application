@@ -3,7 +3,13 @@ import Link from "next/link";
 import React from "react";
 
 
+async function getDetails() {
+  const response = await axios.post("http://localhost3000/api/server")
+  return response.data;
+}
+
 const MenuPosts = ({ withImage }) => {
+  
   return (
     <div className='container text-white flex-1 mt-3 ml-10'>
       <Link href="/" >
@@ -17,6 +23,7 @@ const MenuPosts = ({ withImage }) => {
           <h3 >
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
+          <h1></h1>
           <div >
             <span >John Doe</span>
             <span > - 10.03.2023</span>
