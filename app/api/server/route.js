@@ -7,9 +7,8 @@ export function GET() {
     })
 }
 export async function POST(req) {
-    return NextResponse.json({
-            name: "Movie",
-            desc: "Love"
-    })
+   const body = await req.json()
+
+   return new NextResponse({username: req.body, password: req.body})
 }
 
