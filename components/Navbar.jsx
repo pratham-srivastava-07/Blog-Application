@@ -17,7 +17,7 @@ export default function Navbar() {
       <Link href="/" className='hover:text-black'>Home</Link>
       <Link href="/about" className='hover:text-black'>About</Link>
       <Link href="/write" className='hover:text-black'>Write</Link>
-      <Link href="/login" className='hover:text-black'>Login</Link>
+      <Link href="/signin" className='hover:text-black'>Login</Link>
       {/* <AuthLinks/> */}
     </div>
    
