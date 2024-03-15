@@ -77,7 +77,9 @@ export default function Menu() {
           </div>
         </Link>
       </div>
-      <MenuPosts/>
+    <div className="mt-10 ml-10">
+    <MenuPosts/>
+    </div>
     </div>
   )
 }

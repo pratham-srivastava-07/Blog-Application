@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import axios from "axios"
 
 async function getDetails() {
-  const response = await axios.post("http://localhost3000/api/server")
+  const response = await axios.get("http://localhost:3000/api/server")
   return response.data;
 }
 
-const MenuPosts = ({ withImage }) => {
-  
+export default async function MenuPosts({ withImage }) {
+  const getData = await getDetails()
   return (
     <div className='container text-white flex-1 mt-3 ml-10'>
       <Link href="/" >
@@ -19,14 +19,11 @@ const MenuPosts = ({ withImage }) => {
           </div>
         )}
         <div >
-          <span >Travel</span>
-          <h3 >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <h1></h1>
-          <div >
-            <span >John Doe</span>
-            <span > - 10.03.2023</span>
+          <span className="block text-sm font-semibold uppercase tracking-wide text-gray-300">Travel</span>
+          <h3 className="mt-1 text-lg leading-tight font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <div className="flex items-center mt-2">
+            <span className="text-sm mr-1">John Doe</span>
+            <span className="text-sm">- 10.03.2023</span>
           </div>
         </div>
       </Link>
@@ -37,15 +34,11 @@ const MenuPosts = ({ withImage }) => {
           </div>
         )}
         <div >
-          <span >
-            Culture
-          </span>
-          <h3 >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div >
-            <span >John Doe</span>
-            <span > - 10.03.2023</span>
+          <span className="block text-sm font-semibold uppercase tracking-wide text-gray-300">Culture</span>
+          <h3 className="mt-1 text-lg leading-tight font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <div className="flex items-center mt-2">
+            <span className="text-sm mr-1">John Doe</span>
+            <span className="text-sm">- 10.03.2023</span>
           </div>
         </div>
       </Link>
@@ -56,13 +49,11 @@ const MenuPosts = ({ withImage }) => {
           </div>
         )}
         <div >
-          <span >Food</span>
-          <h3 >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div >
-            <span >John Doe</span>
-            <span > - 10.03.2023</span>
+          <span className="block text-sm font-semibold uppercase tracking-wide text-gray-300">Food</span>
+          <h3 className="mt-1 text-lg leading-tight font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <div className="flex items-center mt-2">
+            <span className="text-sm mr-1">John Doe</span>
+            <span className="text-sm">- 10.03.2023</span>
           </div>
         </div>
       </Link>
@@ -73,20 +64,16 @@ const MenuPosts = ({ withImage }) => {
           </div>
         )}
         <div >
-          <span >
-            Fashion
-          </span>
-          <h3 >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div >
-            <span >John Doe</span>
-            <span > - 10.03.2023</span>
+          <span className="block text-sm font-semibold uppercase tracking-wide text-gray-300">Fashion</span>
+          <h3 className="mt-1 text-lg leading-tight font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <div className="flex items-center mt-2">
+            <span className="text-sm mr-1">John Doe</span>
+            <span className="text-sm">- 10.03.2023</span>
           </div>
+          {getData.name}
+          {getData.id}
         </div>
       </Link>
     </div>
   );
-};
-
-export default MenuPosts;
+}
