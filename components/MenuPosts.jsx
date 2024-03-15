@@ -70,8 +70,6 @@ export default async function MenuPosts({ withImage }) {
             <span className="text-sm mr-1">John Doe</span>
             <span className="text-sm">- 10.03.2023</span>
           </div>
-          {getData.name}
-          {getData.id}
         </div>
       </Link>
     </div>
