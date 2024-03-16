@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import ThemeToggle from './ThemeToggle'
 // import AuthLinks from './AuthLinks'
+// import Button from "./Button"
 
 
 export default function Navbar() {
@@ -14,6 +16,7 @@ export default function Navbar() {
     </div>
     <div className='logo flex-1 lg:pl-36 sm:pl-auto md:pl-auto font-bold text-2xl md:flex-col md:text-left sm:flex-col sm:text-left sm:m-auto lg:flex-row'>EpicBlogsss</div>
     <div className="links flex-1 space-x-5 md:hidden sm:hidden xsm:hidden lg:block ">
+      <ThemeToggle/>
       <Link href="/" className='hover:text-black'>Home</Link>
       <Link href="/about" className='hover:text-black'>About</Link>
       <Link href="/write" className='hover:text-black'>Write</Link>
