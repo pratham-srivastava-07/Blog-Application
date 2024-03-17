@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Feature = () => {
   return (
@@ -13,7 +14,7 @@ const Feature = () => {
             <h1 className="title text-2xl text-white">Welcome to EpicBlogss</h1>
             <p className="desc text-lg font-light text-white">Welcome to our blog, where we strive to bring you the most captivating stories and insightful articles. Dive into a world of creativity and inspiration, crafted by our team of passionate writers. Join us as we explore the latest trends, share valuable insights, and engage in meaningful discussions. Let's embark on this journey together, one story at a time
             </p>
-            <button className='p-4 border-none rounded-md max-w-max text-black bg-white lg:block md:block sm:hidden'>Read More</button>
+           <Link href="/blog"> <button className='p-4 border-none rounded-md max-w-max text-black bg-white lg:block md:block sm:hidden'>Read More</button></Link>
         </div>
       </div>
     </div>
