@@ -3,9 +3,9 @@
 import { useState } from 'react';
 
 const BlogPage = () => {
-    const [posts, setPosts] = useState([]); // Array to hold blog posts
-    const [currentPage, setCurrentPage] = useState(1); // Current page number
-    const [postsPerPage] = useState(5); // Number of posts per page
+    const [posts, setPosts] = useState([]); 
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(5); 
 
     // Dummy data for blog posts
     const dummyPosts = [
