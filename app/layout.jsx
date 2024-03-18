@@ -9,6 +9,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Blog App",
 };
+export const viewport = {
+  initialScale: 1,
+  width: "device-width",
+  maximumScale: 1,
+};
 
 export default function RootLayout({ children }) {
   return (

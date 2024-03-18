@@ -5,10 +5,11 @@ import Link from 'next/link'
 const Feature = () => {
   return (
     <div className=' container mt-10 '>
-      <h1 className="text-5xl font-light text-white lg:ml-32 md:ml-5 sm:ml-5">
-        <b>Hey Everyone👋! </b> Uncover a world of mesmerizing stories and creativity
+      <h1 className="text-5xl font-light text-white lg:ml-32 lg:block md:flex md:justify-center md:items-center sm:flex sm:justify-center sm:items-center">
+        Hey Everyone👋! 
+        <span className='sm:hidden lg:flex md:flex'> Uncover a world of mesmerizing stories and creativity</span>
       </h1>
-      <div className="post mt-16 flex items-center gap-12">
+      <div className="post mt-16 flex items-center gap-12 lg:flex md:flex-row">
             <Image src="/p1.jpeg" width={300} height={50} alt='' className='img lg:ml-32 lg:mb-24 lg:p-0 sm:pb-96 sm:pl-5 '/>
         <div className="textContainer flex flex-col gap-5 sm:mb-32 md:mb-auto lg:mb-auto">
             <h1 className="title text-2xl text-white">Welcome to EpicBlogss</h1>

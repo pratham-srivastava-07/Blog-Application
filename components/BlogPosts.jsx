@@ -24,7 +24,7 @@ const BlogPage = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 h-screen">
             {/* Blog Post Cards */}
             {currentPosts.map(post => (
                 <div key={post.id} className="bg-white shadow-md p-4 mb-4">
