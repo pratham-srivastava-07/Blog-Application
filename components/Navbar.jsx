@@ -8,7 +8,7 @@ import ThemeToggle from './ThemeToggle'
 
 export default function Navbar() {
   return (
-  <div className='nav flex justify-center space-x-4 items-center mt-4 h-16 text-white border-b border-gray-100 '>
+  <div className='nav flex justify-center space-x-4 items-center mt-4 h-16 text-white border-b border-gray-100'>
     <div className='social flex-1 p-5 lg:ml-28 lg:flex md:m-auto gap-4 sm:hidden xsm:hidden lg:w-1/2'>
       <Image src="/facebook.png" alt='facebook' width={24} height={24}/>
       <Image src="/instagram.png" alt='facebook' width={24} height={24}/>

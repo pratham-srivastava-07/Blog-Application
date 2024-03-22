@@ -9,6 +9,6 @@ export function GET() {
 export async function POST(req) {
    const body = await req.json()
 
-   return new NextResponse({username: req.body, password: req.body})
+   return new NextResponse({username: req.body,email: req.body, password: req.body})
 }
 
