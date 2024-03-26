@@ -1,9 +1,11 @@
+import WriteBlogs from "../../components/WriteBlogs"
+
 import React from 'react'
 
 export default function page() {
   return (
-    <div>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
+    <div className="h-screen">
+     <WriteBlogs/>
     </div>
   )
 }
